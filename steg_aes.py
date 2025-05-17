@@ -87,7 +87,7 @@ def parse_args():
 
 def main():
     args = parse_args()
-    key = os.urandom(32)  # AES-256 key
+    key = os.urandom(32)
 
     if args.mode == 'hide':
         if not args.message:

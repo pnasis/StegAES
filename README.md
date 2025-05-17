@@ -52,11 +52,6 @@ Make sure you have Python 3 installed, then install the required libraries:
 ```bash
 pip install -r requirements.txt
 ```
-```requirements.txt```
-```
-cryptography
-Pillow
-```
 
 ---
 
