@@ -30,11 +30,11 @@ To extract the message:
 
 ## Features
 
-- ✅ AES-256 encryption
-- ✅ LSB image steganography
-- ✅ Embed or extract message via command-line options
-- ✅ Works with PNG and other uncompressed image formats
-- ✅ Does **not** visibly distort the image
+- AES-256 encryption
+- LSB image steganography
+- Embed or extract message via command-line options
+- Works with PNG and other uncompressed image formats
+- Does **not** visibly distort the image
 
 ---
 
@@ -55,11 +55,11 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+## Usage
 
 The tool can be used in **two modes:** `hide` and `extract`.
 
-### 🔐 Hide a Message
+### Hide a Message
 ```bash
 python steg_aes.py --mode hide --image input.png --message "Your secret message" --output stego_image.png
 ```
@@ -80,7 +80,7 @@ Save the key printed to decrypt the message later.
 
 ---
 
-### 🔓 Extract a Message
+### Extract a Message
 ```bash
 python steg_aes.py --mode extract --image stego_image.png
 ```
@@ -97,14 +97,14 @@ If successful:
 
 ---
 
-## 📌 Notes
+## Notes
 
 - Use **uncompressed formats like PNG** for best results. JPEG may cause data loss.
 - The tool prints the AES key to standard output — it is **your responsibility to securely store or share it**.
 
 ---
 
-## 🛡️ Security Considerations
+## Security Considerations
 
 - This tool combines confidentiality (AES) with steganographic secrecy (LSB).
 - Extraction alone does not compromise the message — AES encryption provides a second layer of defense.
